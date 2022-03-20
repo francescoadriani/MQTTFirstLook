@@ -21,7 +21,7 @@ namespace MQTTFirstLook.Broker
 
             MqttServerOptionsBuilder options = new MqttServerOptionsBuilder()
                 .WithDefaultEndpoint()
-                .WithDefaultEndpointPort(707)
+                .WithDefaultEndpointPort(1883)
                 .WithConnectionValidator(OnNewConnection)
                 .WithApplicationMessageInterceptor(OnNewMessage);
 
